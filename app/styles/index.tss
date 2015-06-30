@@ -1,0 +1,75 @@
+"TabGroup": {
+	tabsBackgroundColor: "white",
+	tabsTintColor: Alloy.CFG.brandPrimary
+}
+
+"Tab": {
+	icon: "/images/tabIcon.png"
+}
+
+"#map": {
+
+	// FIXME: https://jira.appcelerator.org/browse/TIMOB-19102
+	mapType: Alloy.Globals.map.NORMAL_TYPE,
+
+	region: {
+		longitude: -122.0502150,
+		latitude: 37.3895100,
+        latitudeDelta: 0.5,
+        longitudeDelta: 0.5
+    }
+}
+
+// NEW (iOS): Set custom row actions
+"ListItem[platform=ios]": {
+	canEdit: true,
+	editActions: [
+		{
+			style: Ti.UI.iOS.ROW_ACTION_STYLE_DESTRUCTIVE,
+			title: "Destr."
+		},
+		{
+			style: Ti.UI.iOS.ROW_ACTION_STYLE_NORMAL,
+			title: "Norm."
+		},
+		{
+			style: Ti.UI.iOS.ROW_ACTION_STYLE_DEFAULT,
+			title: "Def."
+		},
+		{
+			color: "#337ab7",
+			title: "Color"
+		}
+	]
+}
+
+"#toast": {
+	bottom: 10,
+	left: 10,
+	right: 10,
+	
+	backgroundColor: "#8000",
+	borderRadius: 5,
+	color: "white"
+}
+
+"ScrollableView": {
+	showPagingControl: true,
+	overlayEnabled: true,
+	pagingControlColor: "transparent",
+
+	// PARITY (Android): This works now for Android now as well
+	cacheSize: 3
+}
+
+"Label": {
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".svLabel": {
+	color: "white"
+}
+
+".help": {
+	color: "gray"
+}

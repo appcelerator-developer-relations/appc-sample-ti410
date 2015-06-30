@@ -1,0 +1,13 @@
+# Appcelerator Titanium 4.1.0 Sample App
+This app demonstrates new features in Titanium 4.1.0. For more information about new and changed API's, see the [Release Notes](https://docs.appcelerator.com/platform/release-notes/?version=4.1.0.GA) and [All Fixed Issues](https://jira.appcelerator.org/issues/?filter=16879) on JIRA.
+
+![screenshots](screenshots.png)
+
+## Features demonstrated in this sample app
+
+* Added [Modules.Map.Circle](https://docs.appcelerator.com/platform/latest/#!/api/Modules.Map.Circle), [Modules.Map.Polyline](https://docs.appcelerator.com/platform/latest/#!/api/Modules.Map.Polyline) and [Modules.Map.Polygon](https://docs.appcelerator.com/platform/latest/#!/api/Modules.Map.Polygon) to the Map module.<br />![iOS](https://img.shields.io/badge/OS-iOS-blue.svg?style=flat-square) ![Android](https://img.shields.io/badge/OS-Android-green.svg?style=flat-square) 
+* Added [Ti.UI.ListView:scrollstart](https://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.ListView-event-scrollstart) and [Ti.UI.ListView:scrollend](https://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.ListView-event-scrollend) events.<br />![iOS](https://img.shields.io/badge/OS-iOS-blue.svg?style=flat-square) ![Android](https://img.shields.io/badge/OS-Android-green.svg?style=flat-square)
+* Added [Ti.UI.ListView.addMarker()](https://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.ListView-method-addMarker) to listen to multiple markers.<br />![iOS](https://img.shields.io/badge/OS-iOS-blue.svg?style=flat-square) ![Android](https://img.shields.io/badge/OS-Android-green.svg?style=flat-square)
+* Added [Ti.UI.ListItem.editActions](https://docs.appcelerator.com/platform/latest/#!/guide/ListViews-section-37521650_ListViews-ActionItems) for [ListView Action Items](https://docs.appcelerator.com/platform/latest/#!/guide/ListViews-section-37521650_ListViews-ActionItems).<br />![iOS](https://img.shields.io/badge/OS-iOS-blue.svg?style=flat-square)
+* Parity for [Ti.UI.ScrollableView.cacheSize](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.ScrollableView-property-cacheSize)<br />![Android](https://img.shields.io/badge/OS-Android-green.svg?style=flat-square)
+* Parity for `PATCH` as method for [Ti.Network.HTTPClient.open()](https://docs.appcelerator.com/platform/latest/#!/api/Titanium.Network.HTTPClient-method-open)<br />![Android](https://img.shields.io/badge/OS-Android-green.svg?style=flat-square)

@@ -1,0 +1,17 @@
+<Alloy>
+	<Window>
+
+		<Label>The first Windows specific UI component available is the CommandBar:</Label>
+
+		<!--
+		See /app/lib/polyfill.js for the workaround for:
+		FIXME: https://jira.appcelerator.org/browse/ALOY-1280
+		-->
+		<CommandBar module="polyfill">
+			<AppBarButton module="polyfill" icon="Ti.UI.Windows.SystemIcon.ADD" onClick="onButtonClick" />
+			<AppBarSeparator module="polyfill" />
+			<AppBarToggleButton module="polyfill" icon="Ti.UI.Windows.SystemIcon.LIKEDISLIKE" onClick="onToggleButtonClick" />
+		</CommandBar>
+
+	</Window>
+</Alloy>

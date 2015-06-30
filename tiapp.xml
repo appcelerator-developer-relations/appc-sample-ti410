@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+  <id>com.appcelerator.sample.ti410</id>
+  <name>Ti 4.1.0</name>
+  <version>4.1.0</version>
+  <publisher>Appcelerator</publisher>
+  <url>http://www.appcelerator.com</url>
+  <description>This app demonstrates new features in Titanium 4.1.0.</description>
+  <copyright>2015 by Appcelerator, Inc.</copyright>
+  <icon>appicon.png</icon>
+  <fullscreen>false</fullscreen>
+  <navbar-hidden>false</navbar-hidden>
+  <analytics>true</analytics>
+  <guid>11111111-1111-1111-1111-111111111111</guid>
+  
+  <guid>0f2fcae0-6903-4df2-9999-cfac36a2530f</guid>
+  <property name="appc-app-id" type="string">559108372498394930dc63de</property>
+
+  <property name="ti.ui.defaultunit" type="string">dp</property>
+  <ios>
+    <plist>
+      <dict>
+        <key>UISupportedInterfaceOrientations~iphone</key>
+        <array>
+          <string>UIInterfaceOrientationPortrait</string>
+        </array>
+        <key>UISupportedInterfaceOrientations~ipad</key>
+        <array>
+          <string>UIInterfaceOrientationPortrait</string>
+          <string>UIInterfaceOrientationPortraitUpsideDown</string>
+          <string>UIInterfaceOrientationLandscapeLeft</string>
+          <string>UIInterfaceOrientationLandscapeRight</string>
+        </array>
+        <key>UIRequiresPersistentWiFi</key>
+        <false/>
+        <key>UIPrerenderedIcon</key>
+        <false/>
+        <key>UIStatusBarHidden</key>
+        <false/>
+        <key>UIStatusBarStyle</key>
+        <string>UIStatusBarStyleLightContent</string>
+      </dict>
+    </plist>
+  </ios>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <manifest>
+            <application android:theme="@style/appcelerator">
+                <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyB1ATGRrby9stkKxvdl3SBYxSVB5Kkm7yM"/>
+            </application>
+            <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="21"/>
+        </manifest>
+    </android>
+  <mobileweb>
+    <precache></precache>
+    <splash>
+      <enabled>true</enabled>
+      <inline-css-images>true</inline-css-images>
+    </splash>
+    <theme>default</theme>
+  </mobileweb>
+  <modules>
+    <module platform="iphone">ti.map</module>
+    <module platform="android">ti.map</module>
+  </modules>
+  <deployment-targets>
+    <target device="android">true</target>
+    <target device="ipad">true</target>
+    <target device="iphone">true</target>
+    <target device="mobileweb">false</target>
+    <target device="windows">true</target>
+  </deployment-targets>
+  <sdk-version>4.1.0.v20150626223333</sdk-version>
+  <plugins>
+    <plugin version="1.0">ti.alloy</plugin>
+    <plugin version="1.0">ti.map</plugin>
+  </plugins>
+</ti:app>

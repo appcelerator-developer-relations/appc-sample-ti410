@@ -1,0 +1,83 @@
+<Alloy>
+	<TabGroup>
+		<Tab title="Map">
+			<Window title="Map Vector Overlays">
+				<View id="map" module="ti.map" />
+			</Window>
+		</Tab>
+		<Tab title="List View">
+			<Window title="List View events">
+
+				<ListView id="listView" onMarker="onMarker" onScrollstart="onScrollstart" onScrollend="onScrollend" onRowAction="onRowAction">
+					<ListSection headerTitle="Section 0">
+						<ListItem title="Item 0.0" />
+						<ListItem title="Item 0.1" />
+						<ListItem title="Item 0.2" />
+						<ListItem title="Item 0.3" />
+						<ListItem title="Item 0.4" />
+						<ListItem title="Item 0.5" />
+						<ListItem title="Item 0.6" />
+						<ListItem title="Item 0.7" />
+						<ListItem title="Item 0.8" />
+						<ListItem title="Item 0.9" />
+						<ListItem title="Item 0.10" />
+						<ListItem title="Item 0.11" />
+						<ListItem title="Item 0.12" />
+						<ListItem title="Item 0.13" />
+						<ListItem title="Item 0.14" />
+						<ListItem title="Item 0.15" accessoryType="Ti.UI.LIST_ACCESSORY_TYPE_CHECKMARK" />
+					</ListSection>
+					<ListSection headerTitle="Section 1">
+						<ListItem title="Item 1.0" />
+						<ListItem title="Item 1.1" />
+						<ListItem title="Item 1.2" />
+						<ListItem title="Item 1.3" />
+						<ListItem title="Item 1.4" />
+						<ListItem title="Item 1.5" />
+						<ListItem title="Item 1.6" />
+						<ListItem title="Item 1.7" />
+						<ListItem title="Item 1.8" />
+						<ListItem title="Item 1.9" />
+						<ListItem title="Item 1.10" />
+						<ListItem title="Item 1.11" />
+						<ListItem title="Item 1.12" />
+						<ListItem title="Item 1.13" />
+						<ListItem title="Item 1.14" />
+						<ListItem title="Item 1.15" accessoryType="Ti.UI.LIST_ACCESSORY_TYPE_CHECKMARK" />
+					</ListSection>
+				</ListView>
+				<Label id="toast">scroll to see events\nmarker at 0.15 and 1.15</Label>
+			</Window>
+		</Tab>
+		<Tab title="cacheSize">
+			<Window title="cacheSize for ScrollableView">
+				<ScrollableView>
+					<View backgroundColor="#337ab7">
+						<Label class="svLabel">This is the first one of five with cacheSize set to 3</Label>
+					</View>
+					<View backgroundColor="#5cb85c">
+						<Label class="svLabel">This second one was already cached when the first showed</Label>
+					</View>
+					<View backgroundColor="#5bc0de">
+						<Label class="svLabel">This third one was cached when the second came in</Label>
+					</View>
+					<View backgroundColor="#f0ad4e">
+						<Label class="svLabel">This fourth one was cached when the third showed</Label>
+					</View>
+					<View backgroundColor="#d9534f">
+						<Label class="svLabel">This fifth one was... well, you get it</Label>
+					</View>
+				</ScrollableView>
+			</Window>
+		</Tab>
+		<Tab title="Other">
+			<Window id="otherWin" title="PATCH / i18n / uncaughtException" layout="vertical">
+				<Button onClick="doPatch" top="50">PATCH</Button>
+				<Label textid="hello_world" top="50" />
+				<Button onClick="doUncaughtException" top="50">uncaughtException</Button>
+				<Label platform="ios" if="!Alloy.Globals.production" top="5" class="help">Because you're not in production, you will first see the red screen and then the alert opened by the listener.</Label>
+				<Label platform="android" if="!Alloy.Globals.production" top="5" class="help">Because you're not in production, you will first both the built-in alert and the one we show in the listener.</Label>
+			</Window>
+		</Tab>
+	</TabGroup>
+</Alloy>
