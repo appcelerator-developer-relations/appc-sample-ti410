@@ -5,6 +5,7 @@ This app demonstrates new features in Titanium 4.1.0. For more information about
 
 ## Features demonstrated in this sample app
 
+* Added [Ti.UI.Windows.CommandBar](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.Windows.CommandBar) (and the rest of the API) for Windows.<br />![Windows](https://img.shields.io/badge/OS-Windows-red.svg?style=flat-square)
 * Added [Modules.Map.Circle](https://docs.appcelerator.com/platform/latest/#!/api/Modules.Map.Circle), [Modules.Map.Polyline](https://docs.appcelerator.com/platform/latest/#!/api/Modules.Map.Polyline) and [Modules.Map.Polygon](https://docs.appcelerator.com/platform/latest/#!/api/Modules.Map.Polygon) to the Map module.<br />![iOS](https://img.shields.io/badge/OS-iOS-blue.svg?style=flat-square) ![Android](https://img.shields.io/badge/OS-Android-green.svg?style=flat-square) 
 * Added [Ti.UI.ListView:scrollstart](https://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.ListView-event-scrollstart) and [Ti.UI.ListView:scrollend](https://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.ListView-event-scrollend) events.<br />![iOS](https://img.shields.io/badge/OS-iOS-blue.svg?style=flat-square) ![Android](https://img.shields.io/badge/OS-Android-green.svg?style=flat-square)
 * Added [Ti.UI.ListView.addMarker()](https://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.ListView-method-addMarker) to listen to multiple markers.<br />![iOS](https://img.shields.io/badge/OS-iOS-blue.svg?style=flat-square) ![Android](https://img.shields.io/badge/OS-Android-green.svg?style=flat-square)
