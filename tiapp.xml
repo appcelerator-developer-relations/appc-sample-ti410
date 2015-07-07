@@ -12,10 +12,6 @@
   <navbar-hidden>false</navbar-hidden>
   <analytics>true</analytics>
   <guid>11111111-1111-1111-1111-111111111111</guid>
-  
-  <!-- <guid>0f2fcae0-6903-4df2-9999-cfac36a2530f</guid> -->
-  <!-- <property name="appc-app-id" type="string">559108372498394930dc63de</property> -->
-
   <property name="ti.ui.defaultunit" type="string">dp</property>
   <ios>
 
