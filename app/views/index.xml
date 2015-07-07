@@ -5,8 +5,8 @@
 				<View id="map" module="ti.map" />
 			</Window>
 		</Tab>
-		<Tab title="List View">
-			<Window title="List View events">
+		<Tab title="ListView">
+			<Window title="ListView events">
 
 				<ListView id="listView" onMarker="onMarker" onScrollstart="onScrollstart" onScrollend="onScrollend" onRowAction="onRowAction">
 					<ListSection headerTitle="Section 0">
@@ -71,8 +71,8 @@
 			</Window>
 		</Tab>
 		<Tab title="Other">
-			<Window id="otherWin" title="PATCH / i18n / uncaughtException" layout="vertical">
-				<Button onClick="doPatch" top="50">PATCH</Button>
+			<Window id="otherWin" title="Other" layout="vertical">
+				<Button onClick="doPatch" top="50">PATCH & Material Alert</Button>
 				<Label textid="hello_world" top="50" />
 				<Button onClick="doUncaughtException" top="50">uncaughtException</Button>
 				<Label platform="ios" if="!Alloy.Globals.production" top="5" class="help">Because you're not in production, you will first see the red screen and then the alert opened by the listener.</Label>
