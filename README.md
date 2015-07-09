@@ -43,7 +43,7 @@ Per tab:
 #### tiapp.xml
 
 * [TIMOB-18834](https://jira.appcelerator.org/browse/TIMOB-18834): Added option to use JavaScriptCore instead of TiCore.<br />![iOS](https://img.shields.io/badge/OS-iOS-blue.svg?style=flat-square)
-* [TIMOB-17993](https://jira.appcelerator.org/browse/TIMOB-17993): Added option to manually set `CFBundleVersion` and `CFBundleShortVersionString`.
+* [TIMOB-17993](https://jira.appcelerator.org/browse/TIMOB-17993): Added option to manually set `CFBundleVersion` and `CFBundleShortVersionString`.<br />![iOS](https://img.shields.io/badge/OS-iOS-blue.svg?style=flat-square)
 
 See [Gruntfile.js](Gruntfile.js) for an example of how you can bump an integer build version number for Android and iOS while leaving it up to Titanium to use `<version>` for the release version number.
  
