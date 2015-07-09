@@ -1,4 +1,7 @@
 {
+	"scripts": {
+		"assets": "ticons icons _assets/icon_shape.png && ticons icons _assets/icon.png -p ios && ticons splashes _assets/icon.png -c"
+	},
 	"devDependencies": {
 		"grunt": "^0.4.5"
 	}

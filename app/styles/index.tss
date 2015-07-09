@@ -4,7 +4,11 @@
 }
 
 "Tab": {
-	icon: "/images/tabIcon.png"
+	icon: "/images/tabIcon.png",
+
+	// NEW (iOS): Set the (active) titleColor (defaults to tabsTintColor)
+	activeTitleColor: "#929292",
+	titleColor: Alloy.CFG.brandPrimary
 }
 
 "#map": {
@@ -18,6 +22,13 @@
         latitudeDelta: 0.5,
         longitudeDelta: 0.5
     }
+}
+
+"ListView[platform=android]": {
+	separatorColor: Alloy.CFG.brandPrimary,
+
+	// NEW (Android): Set separatorHeight
+	separatorHeight: 5
 }
 
 // NEW (iOS): Set custom row actions
@@ -47,7 +58,7 @@
 	bottom: 10,
 	left: 10,
 	right: 10,
-	
+
 	backgroundColor: "#8000",
 	borderRadius: 5,
 	color: "white"
@@ -60,6 +71,12 @@
 
 	// PARITY (Android): This works now for Android now as well
 	cacheSize: 3
+}
+
+"ScrollView": {
+	scrollType: "vertical",
+	contentWidth: Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE
 }
 
 "Label": {
