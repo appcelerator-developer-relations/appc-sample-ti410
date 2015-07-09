@@ -80,7 +80,20 @@
 }
 
 "Label": {
+	width: Ti.UI.FILL,
 	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+"TextField": {
+	width: Ti.UI.FILL
+}
+
+".padding": {
+	top: 10,
+	right: 10,
+	bottom: 10,
+	left: 10,
+	height: Ti.UI.SIZE
 }
 
 ".svLabel": {

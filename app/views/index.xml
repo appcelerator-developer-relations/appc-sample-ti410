@@ -72,19 +72,27 @@
 		</Tab>
 		<Tab title="Other">
 			<Window id="otherWin" title="Other">
-				<ScrollView layout="vertical">
-					<Button platform="android" onClick="doPatch" top="20">PATCH & Material Alert</Button>
-					<Label textid="hello_world" top="20" />
+				<ScrollView>
+					<View class="padding" layout="vertical">
 
-					<!-- NEW (Android): Ti.UI.Label.lines -->
-					<Label platform="android" lines="3" top="20" backgroundColor="#eee">This label is exactly 3 lines tall.</Label>
+						<Button platform="android" onClick="doPatch" top="20">PATCH & Material Alert</Button>
 
-					<!-- NEW (Android): Ti.UI.Label.maxLines -->
-					<Label platform="android" maxLines="2" top="20" backgroundColor="#eee">This label is at most 2 lines tall, even if there is way more text in it like now if I just keep on typing here and you are not viewing this on a huuuuuge device.</Label>
+						<Label textid="hello_world" top="20" />
 
-					<Button onClick="doUncaughtException" top="20">uncaughtException</Button>
-					<Label platform="ios" if="!Alloy.Globals.production" top="5" class="help">Because you're not in production, you will first see the red screen and then the alert opened by the listener.</Label>
-					<Label platform="android" if="!Alloy.Globals.production" top="5" class="help">Because you're not in production, you will see both the built-in alert and the one we show in the listener.</Label>
+						<!-- NEW (Android): Ti.UI.Label.hintColorText -->
+						<TextField platform="android" backgroundColor="#eee" color="#000" hintText="hintTextColor, also on TextArea's" hintTextColor="#CD1625" top="20" />
+
+						<!-- NEW (Android): Ti.UI.Label.lines -->
+						<Label platform="android" lines="3" top="20" backgroundColor="#eee">This label is exactly 3 lines tall.</Label>
+
+						<!-- NEW (Android): Ti.UI.Label.maxLines -->
+						<Label platform="android" maxLines="2" top="20" backgroundColor="#eee">This label is at most 2 lines tall, even if there is way more text in it like now if I just keep on typing here and you are not viewing this on a huuuuuge device.</Label>
+
+						<Button onClick="doUncaughtException" top="20">uncaughtException</Button>
+						<Label platform="ios" if="!Alloy.Globals.production" top="5" class="help">Because you're not in production, you will first see the red screen and then the alert opened by the listener.</Label>
+						<Label platform="android" if="!Alloy.Globals.production" top="5" class="help">Because you're not in production, you will see both the built-in alert and the one we show in the listener.</Label>
+
+					</View>
 				</ScrollView>
 			</Window>
 		</Tab>
