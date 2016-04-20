@@ -55,9 +55,9 @@
         <manifest android:versionCode="123">
 
             <application android:theme="@style/appcelerator">
-                <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyB1ATGRrby9stkKxvdl3SBYxSVB5Kkm7yM"/>
+                <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="YOUR GOOGLE MAPS API KEY HERE"/>
             </application>
-            <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="21"/>
+            <uses-sdk android:minSdkVersion="14"/>
         </manifest>
     </android>
   <mobileweb>
