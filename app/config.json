@@ -1,6 +1,7 @@
 {
 	"global": {
-		"brandPrimary": "#CD1625"
+		"brandPrimary": "#CD1625",
+		"minVersion": "1.7.0"
 	},
 	"env:development": {},
 	"env:test": {},
